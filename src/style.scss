@@ -95,3 +95,24 @@ img{
 .article-name{
     max-width: 90%;
 }
+
+.article-card-img{
+    width: 3.5rem;
+}
+
+.article-card-img-big{
+    width: 6rem;
+}
+
+.article-card-img,
+.article-card-img-big{
+    margin-right: 1rem;
+}
+
+#fullWidthButtons{
+    background-color: var(--bg-light-blue);
+}
+
+.bg-gray{
+    background-color: var(--bg-darker-gray)
+}
