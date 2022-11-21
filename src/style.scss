@@ -1,0 +1,61 @@
+:root{
+
+    //background
+    --bg-white: #ffffff;
+    --bg-off-white: #f7f7f7;
+    --bg-lighter-gray: #d6d6d6;
+    --bg-light-gray: #CCCCCC;
+    --bg-light-blue: #0088CC;
+    --bg-blue: #0074ad;
+    --bg-dark-gray: #404040;
+    --bg-darker-gray: #212529;
+    --bg-gray: #212529CC;
+    --bg-off-black: #1c2023;
+    --bg-light-gray-2: #17171740;
+    --bg-off-white-2: #00000008;
+    --bg-black: #000000;
+
+    //text
+    --text-white: #FFFFFF;
+    --text-light-gray: #B7B7B7;
+    --text-gray: #888888;
+    --text-blue: #0088CC;
+    --text-gray2: #777777;
+    --text-dark-gray: #555555;
+    --text-darker-gray: #444444;
+    --text-darker-gray2: #333333;
+    --text-darkest-gray: #212529;
+    --text-black: #000000;
+
+    //border
+    --border-off-white: #F7F7F7;
+    --border-off-white2: #EEEEEE;
+    --border-off-white-3: #EDEDED;
+    --border-lightest-gray: #E2E2E2;
+    --border-lighter-gray: #D9D9D9;
+    --border-light-gray: #BFBFBF;
+    --border-blue: #0088CC;
+    --border-dark-blue: #005580;
+    --border-off-black: #212529;
+    --border-black: #0A0C0D;
+    --border-off-white-4: #0000000F;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+.headerBanner{
+    background-color: var(--bg-light-blue);
+}
+
+.logo{
+    border-bottom: 5px solid var(--border-light-gray);
+}
