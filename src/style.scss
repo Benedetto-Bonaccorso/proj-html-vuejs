@@ -56,6 +56,42 @@ img{
     background-color: var(--bg-light-blue);
 }
 
+.font-small{
+    font-size: small;
+}
+
 .logo{
-    border-bottom: 5px solid var(--border-light-gray);
+    width: 5.5rem;
+}
+
+.border-bottom-5{
+    border-bottom: 5px solid var(--border-off-white);
+}
+
+.active{
+    color: var(--text-blue) !important;
+}
+
+#hotArticles{
+    padding: 2rem;
+    background-color: var(--bg-off-white);
+}
+
+.article-img{
+    filter: brightness(60%);
+}
+
+.article-info{
+    bottom: 20%;
+    left: 10%;
+}
+
+.article-category{
+    background-color: var(--bg-blue);
+    padding: 8px 16px;
+    width: fit-content;
+}
+
+.article-name{
+    max-width: 90%;
 }
