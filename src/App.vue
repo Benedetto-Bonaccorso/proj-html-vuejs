@@ -12,11 +12,42 @@
     },
     data(){
       return{
-        state
+        state,
+      }
+    },
+    computed: {
+      filteredHotArticles(){
+        return this.state.slice(0,this.state.maxHotArticles)
       }
     },
     mounted(){
 
+      for(let i = 0; i < this.state.maxHotArticles; i++){
+        this.state.hotArticles.push(this.state.articles[i])
+      }
+
+      for(let i = this.state.articles.length; i > this.state.maxRecentArticles; i--){
+        this.state.recentArticles.push(this.state.articles[i])
+      }
+
+      //sorting the articles by most popular (using likes)
+
+      this.state.popularArticlesTemporaryArray = this.state.articles.sort((a, b) =>  a.likes - b.likes)
+
+      //only taking the top 5 most liked and putting them in an array
+
+      for(let i = this.state.popularArticlesTemporaryArray.length - 1;
+       i > this.state.popularArticlesTemporaryArray.length - this.state.maxPopularArticles - 1 ; i--){
+        this.state.popularArticles.push(this.state.popularArticlesTemporaryArray[i])
+      }
+
+      //randomly choosing an article to feature on the front page
+
+      this.state.featuredPostRng = Math.floor(Math.random()*this.state.articles.length +1)
+
+      
+
+      console.log(this.state.featuredPostRng)
     }
   }
 </script>
