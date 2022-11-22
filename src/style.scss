@@ -116,3 +116,26 @@ img{
 .bg-gray{
     background-color: var(--bg-darker-gray)
 }
+
+.photoMosaic>img{
+    width: 33%;
+}
+
+.tag{
+    background-color: var(--bg-dark-gray);
+}
+
+.mid-page-link{
+    border-left: 5px solid var(--bg-lighter-gray);
+}
+
+.article-day{
+    background-color: var(--bg-off-white);
+    font-weight: bolder;
+}
+
+.article-month{
+    background-color: var(--bg-dark-gray);
+    color: white;
+    font-weight: bold;
+}
