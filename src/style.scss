@@ -139,3 +139,28 @@ img{
     color: white;
     font-weight: bold;
 }
+
+#pageFooter{
+    background-color: var(--bg-darker-gray);
+}
+
+.post-pfp{
+    height: 6rem;
+    border-radius: 50px;
+}
+
+#pageBottom{
+    background-color: var(--bg-off-black);
+}
+
+.category{
+    font-size: x-small;
+    background-color: var(--bg-black);
+    padding: 0.5rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+}
+
+.bottom-logo{
+    height: 2rem;
+}
