@@ -26,10 +26,25 @@
         this.state.hotArticles.push(this.state.articles[i])
       }
 
-      for(let i = this.state.articles.length; i > this.state.maxRecentArticles; i--){
-        this.state.recentArticles.push(this.state.articles[i])
+      /*
+      for(let i = 0; i < this.state.maxRecentArticles; i++){
+        this.state.recentArticlesTemporaryArray.push(this.state.articles[i])
       }
+      */
 
+      // sorting articles my month
+
+      this.state.recentArticlesTemporaryArray = this.state.articles.sort((a, b) =>  Number(b.date.slice(-7, -5)) - Number(a.date.slice(-7, -5)))
+
+      // Only selecting articles from 2019
+
+      this.state.recentArticlesTemporaryArray.forEach(article => {
+        if(article.date.slice(-4) == 2019 && this.state.recentArticles.length < this.state.maxRecentArticles){
+          this.state.recentArticles.push(article)
+
+        }
+      });
+      
       //sorting the articles by most popular (using likes)
 
       this.state.popularArticlesTemporaryArray = this.state.articles.sort((a, b) =>  a.likes - b.likes)
@@ -41,13 +56,13 @@
         this.state.popularArticles.push(this.state.popularArticlesTemporaryArray[i])
       }
 
-      //randomly choosing an article to feature on the front page
-
-      this.state.featuredPostRng = Math.floor(Math.random()*this.state.articles.length +1)
+      //sorting posts by most recent
 
       
 
-      console.log(this.state.featuredPostRng)
+      //randomly choosing an article to feature on the front page
+
+      this.state.featuredPostRng = Math.floor(Math.random()*this.state.articles.length +1)
     }
   }
 </script>

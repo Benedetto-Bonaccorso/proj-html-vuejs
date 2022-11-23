@@ -23,7 +23,7 @@ import { state } from "../state.js"
                         <img class="article-card-img" :src="state.path+article.img" alt="">
                         <div class="article-card-info">
                             <h6 class="m-0">{{article.title}}</h6>
-                            <p class="text-muted text-small m-0">{{article.date.substr(-8)}}</p>
+                            <p class="text-muted text-small m-0">{{article.date.substr(-7)}}</p>
                         </div>
                     </div>
                 </div>
@@ -31,41 +31,14 @@ import { state } from "../state.js"
 
                     <h5 class="fs-bold py-4">RECENT POSTS</h5>
 
-                    <div class="article-card d-flex align-items-center py-2">
-                        <img class="article-card-img" src="../assets/blog-40.jpg" alt="">
+                    <div v-for="article in state.recentArticles" class="article-card d-flex align-items-center py-2">
+                        <img class="article-card-img" :src="state.path+article.img" alt="">
                         <div class="article-card-info">
-                            <h6 class="m-0">Titolo Articolo</h6>
-                            <p class="text-muted text-small m-0">Data Articolo</p>
+                            <h6 class="m-0">{{article.title}}</h6>
+                            <p class="text-muted text-small m-0">{{article.date.substr(-7)}}</p>
                         </div>
                     </div>
-                    <div class="article-card d-flex align-items-center py-2">
-                        <img class="article-card-img" src="../assets/blog-40.jpg" alt="">
-                        <div class="article-card-info">
-                            <h6 class="m-0">Titolo Articolo</h6>
-                            <p class="text-muted text-small m-0">Data Articolo</p>
-                        </div>
-                    </div>
-                    <div class="article-card d-flex align-items-center py-2">
-                        <img class="article-card-img" src="../assets/blog-40.jpg" alt="">
-                        <div class="article-card-info">
-                            <h6 class="m-0">Titolo Articolo</h6>
-                            <p class="text-muted text-small m-0">Data Articolo</p>
-                        </div>
-                    </div>
-                    <div class="article-card d-flex align-items-center py-2">
-                        <img class="article-card-img" src="../assets/blog-40.jpg" alt="">
-                        <div class="article-card-info">
-                            <h6 class="m-0">Titolo Articolo</h6>
-                            <p class="text-muted text-small m-0">Data Articolo</p>
-                        </div>
-                    </div>
-                    <div class="article-card d-flex align-items-center py-2">
-                        <img class="article-card-img" src="../assets/blog-40.jpg" alt="">
-                        <div class="article-card-info">
-                            <h6 class="m-0">Titolo Articolo</h6>
-                            <p class="text-muted text-small m-0">Data Articolo</p>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="col-4">
 

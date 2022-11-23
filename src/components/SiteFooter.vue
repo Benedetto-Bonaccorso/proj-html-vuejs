@@ -9,17 +9,17 @@
     }
 </script>
 <template>
-    <div id="pageFooter" class="py-5">
+    <div id="pageFooter" class="my-5 py-5">
         <div class="container">
             <div class="row">
                 <div class="col-4">
                     <h4 class="text-white">
                         ABOUT THE BLOG
                     </h4>
-                    <p class="text-muted">
+                    <p class="text-gray">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sint cupiditate veniam beatae enim dolorum tempora fugit, assumenda quis cum nihil, ipsam totam ipsum? Nam molestias quos excepturi laboriosam vitae.
                     </p>
-                    <p class="text-muted">
+                    <p class="text-gray">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus sint cupiditate veniam beatae enim dolorum tempora fugit, assumenda quis cum nihil, ipsam totam ipsum? Nam molestias quos excepturi laboriosam vitae.
                     </p>
                 </div>
@@ -33,7 +33,7 @@
                             <p class="text-white">
                                 Lorem ipsum dolor sit amet consectetur.
                             </p>
-                            <p class="text-muted">
+                            <p class="text-gray">
                                 Lorem, ipsum dolor.
                             </p>
                         </div>
@@ -45,27 +45,27 @@
                     </h4>
                     <div class="recent-comment text-white my-2">
                         <div class="recent-comment-body d-flex">
-                            <i class="fa-solid fa-chevron-right pe-2"></i>
+                            <i class="fa-solid fa-chevron-right text-color-blue pe-2"></i>
                             <p>
                                 <span class="text-bold">John Doe</span>
                                 commented on
-                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                                <a href="#" class="text-decoration-none text-color-blue">Lorem ipsum dolor sit amet.</a>
                             </p>
                         </div>
-                        <p class="text-muted">
+                        <p class="text-gray">
                             Lorem ipsum dolor sit.
                         </p>
                     </div>
                     <div class="recent-comment text-white my-2">
                         <div class="recent-comment-body d-flex">
-                            <i class="fa-solid fa-chevron-right pe-2"></i>
+                            <i class="fa-solid fa-chevron-right text-color-blue pe-2"></i>
                             <p>
                                 <span class="text-bold">John Doe</span>
                                 commented on
-                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                                <a href="#" class="text-decoration-none text-color-blue">Lorem ipsum dolor sit amet.</a>
                             </p>
                         </div>
-                        <p class="text-muted">
+                        <p class="text-gray">
                             Lorem ipsum dolor sit.
                         </p>
                     </div>

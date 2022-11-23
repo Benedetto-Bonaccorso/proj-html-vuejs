@@ -1,6 +1,13 @@
 <script>
+import { state } from '../state';
+
     export default{
         name: "MainArticles",
+        data(){
+            return{
+                state
+            }
+        }
     }
 </script>
 
@@ -11,6 +18,7 @@
             <div class="row">
                 <div class="col-9">
 
+                    <!--
                     <div class="main-article">
                         <img src="../assets/blog-58 (1).jpg" alt="">
                         <div class="main-article-body d-flex my-4">
@@ -30,13 +38,42 @@
                                 </p>
                                 <div class="main-article-interactions">
                                     <i class="fa-regular fa-user ms-3 me-2"></i>
-                                    <a href="#">John Doe</a>
+                                    <a href="#" class="text-decoration-none">John Doe</a>
                                     <i class="fa-regular fa-folder ms-3 me-2"></i>
-                                    <a href="#">Travel</a>
+                                    <a href="#" class="text-decoration-none">Travel</a>
                                     <p class="d-inline">, </p>
-                                    <a href="#">Lifestyle</a>
+                                    <a href="#" class="text-decoration-none">Lifestyle</a>
                                     <i class="fa-regular fa-comments ms-3 me-2"></i>
-                                    <a href="#">12 comments</a>
+                                    <a href="#" class="text-decoration-none">12 comments</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                    <div v-for="(article, i) in state.articles" class="main-article">
+                        <img class="main-article-img" :src="state.path+article.img" :alt="article.title">
+                        <div class="main-article-body d-flex my-4">
+                            <div class="article-date me-4 my-4 d-flex flex-column align-items-center">
+                                <p class="article-day p-4 mb-0">
+                                    {{article.date.slice(-7, -5)}}
+                                </p>
+                                <p class="article-month px-2 w-100 text-center">
+                                    {{article.date.slice(0, 3)}}
+                                </p>
+                            </div>
+                            <div class="main-article-info">
+                                <h3>{{article.title}}</h3>
+                                <p class="text-muted w-75">
+                                    {{article.content}}
+                                </p>
+                                <div class="main-article-interactions">
+                                    <i class="fa-regular fa-user ms-3 me-2"></i>
+                                    <a href="#" class="text-decoration-none">{{article.authorName}}</a>
+                                    <i class="fa-regular fa-folder ms-3 me-2"></i>
+                                    <a v-for="category in article.categories" href="#" class="text-decoration-none">{{category}}, </a>
+                                    <i class="fa-regular fa-comments ms-3 me-2"></i>
+                                    <a href="#" class="text-decoration-none">{{article.comments}} comments</a>
                                 </div>
                             </div>
                         </div>

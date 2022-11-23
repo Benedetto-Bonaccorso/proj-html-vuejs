@@ -48,6 +48,10 @@
     box-sizing: border-box;
 }
 
+.text-gray{
+    color: var(--text-light-gray);
+}
+
 img{
     max-width: 100%;
 }
@@ -88,7 +92,7 @@ img{
 }
 
 .article-img:hover{
-    border: 5px solid var(--border-lightest-gray)
+    border: 5px solid var(--border-off-white)
 }
 
 .article-info{
@@ -110,6 +114,12 @@ img{
     width: 3.5rem;
     height: 3.5rem;
     object-fit: cover;
+}
+
+.main-article-img{
+    object-fit: cover;
+    width: 70vw;
+    height: 30vw;
 }
 
 .article-card-img-big{
@@ -154,6 +164,10 @@ img{
 
 #pageFooter{
     background-color: var(--bg-darker-gray);
+}
+
+.text-color-blue{
+    color: var(--text-blue);
 }
 
 .post-pfp{
