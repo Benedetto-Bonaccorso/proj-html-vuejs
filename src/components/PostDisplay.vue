@@ -43,16 +43,13 @@ import { state } from "../state.js"
                 <div class="col-4">
 
                     <h5 class="fs-bold py-4">FEATURED POSTS</h5>
-                    <div class="pb-4 position-relative">
-                    <img class="article-img" :src="state.path+state.articles[state.featuredPostRng].img" alt="">
-                    <div class="article-info position-absolute">
-
+                    <div class="pb-4 position-relative article-img-wrapper">
+                        <img class="article-img" :src="state.path+state.articles[state.featuredPostRng].img" alt="">
+                        <div class="article-info position-absolute">
+                            <h6 class="article-category text-white">{{state.articles[state.featuredPostRng].categories[0]}}</h6>
+                            <h4 class="article-name text-white">{{state.articles[state.featuredPostRng].title}}</h4>
+                        </div>
                     </div>
-                    <div class="article-info position-absolute">
-                        <h6 class="article-category text-white">{{state.articles[state.featuredPostRng].categories[0]}}</h6>
-                        <h4 class="article-name text-white">{{state.articles[state.featuredPostRng].title}}</h4>
-                    </div>
-                </div>
                 
                     <h5 class="fs-bold py-4">FEATURED AUTHOR</h5> 
                     <div class="article-card d-flex align-items-center py-2">

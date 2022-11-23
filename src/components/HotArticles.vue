@@ -15,7 +15,7 @@ import {state} from "../state.js"
         <div class="container">
             <div class="row">
 
-                <div v-for="article in state.hotArticles" class="col-4 pb-4 position-relative">
+                <div v-for="article in state.hotArticles" class="col-4 pb-4 position-relative article-img-wrapper">
                     <img class="article-img" :src="state.path+article.img" alt="">
                     <div class="article-info position-absolute">
 

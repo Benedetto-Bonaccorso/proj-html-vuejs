@@ -87,11 +87,11 @@ img{
     height: 15.5vw;
 }
 
-.article-img:not(:hover){
+.article-img{
     filter: brightness(60%);
 }
 
-.article-img:hover{
+.article-img-wrapper:hover{
     border: 5px solid var(--border-off-white)
 }
 
