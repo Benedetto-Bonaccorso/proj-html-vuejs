@@ -49,7 +49,7 @@
 }
 
 .text-gray{
-    color: var(--text-light-gray);
+    color: var(--text-gray);
 }
 
 img{
@@ -194,5 +194,42 @@ img{
 #fullWidthButtons{
     a:hover{
         border: 5px solid var(--border-dark-blue);
+    }
+}
+
+#mainArticles{
+
+    .read-more{
+        color: var(--bg-dark-gray);
+        background-color: var(--bg-white);
+        border: 1px solid var(--bg-darker-gray);
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: x-small;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .page-buttons{
+
+        text-align: right;
+        padding: 1rem 20vw;
+
+        .page-button{
+            width: 2rem;
+            height: 2rem;
+            border: 1px solid var(--border-light-gray);
+        }
+
+        .inactive-button{
+            background-color: var(--bg-off-white);
+            color: var(--text-blue);
+        }
+
+        .active-button{
+            background-color: var(--bg-light-blue);
+            color: white;
+        }
+
     }
 }
