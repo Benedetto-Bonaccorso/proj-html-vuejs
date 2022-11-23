@@ -23,7 +23,7 @@ import { state } from "../state.js"
                         <img class="article-card-img" :src="state.path+article.img" alt="">
                         <div class="article-card-info">
                             <h6 class="m-0">{{article.title}}</h6>
-                            <p class="text-muted text-small m-0">{{article.date.substr(-7)}}</p>
+                            <p class="text-gray text-small m-0">{{article.date.substr(-7)}}</p>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ import { state } from "../state.js"
                         <img class="article-card-img" :src="state.path+article.img" alt="">
                         <div class="article-card-info">
                             <h6 class="m-0">{{article.title}}</h6>
-                            <p class="text-muted text-small m-0">{{article.date.substr(-7)}}</p>
+                            <p class="text-gray text-small m-0">{{article.date.substr(-7)}}</p>
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@ import { state } from "../state.js"
                         <img class="article-card-img-big" src="../assets/blog-40.jpg" alt="">
                         <div class="article-card-info">
                             <h6 class="m-0">{{state.articles[state.featuredPostRng].authorName}}</h6>
-                            <p class="text-muted text-small m-0">{{state.articles[state.featuredPostRng].authorQuote}}</p>
+                            <p class="text-gray text-small m-0">{{state.articles[state.featuredPostRng].authorQuote}}</p>
                         </div>
 </div>
                 </div>

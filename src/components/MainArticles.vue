@@ -18,39 +18,6 @@ import { state } from '../state';
             <div class="row">
                 <div class="col-9">
 
-                    <!--
-                    <div class="main-article">
-                        <img src="../assets/blog-58 (1).jpg" alt="">
-                        <div class="main-article-body d-flex my-4">
-                            <div class="article-date me-4 my-4 d-flex flex-column align-items-center">
-                                <p class="article-day p-4 mb-0">
-                                    12
-                                </p>
-                                <p class="article-month px-2 w-100 text-center">
-                                    JAN
-                                </p>
-                            </div>
-                            <div class="main-article-info">
-                                <h3>Top Camper Trailer Towing Tips</h3>
-                                <p class="text-muted">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis reprehenderit illum veniam possimus autem magni repellendus. Qui quis, perspiciatis inventore sint non aspernatur modi odit deserunt corporis, quam velit. Cumque?
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iusto, sequi ex temporibus harum velit amet dicta. Sint, soluta odio perspiciatis corrupti inventore illo? Asperiores mollitia eos ipsa reiciendis veritatis?
-                                </p>
-                                <div class="main-article-interactions">
-                                    <i class="fa-regular fa-user ms-3 me-2"></i>
-                                    <a href="#" class="text-decoration-none">John Doe</a>
-                                    <i class="fa-regular fa-folder ms-3 me-2"></i>
-                                    <a href="#" class="text-decoration-none">Travel</a>
-                                    <p class="d-inline">, </p>
-                                    <a href="#" class="text-decoration-none">Lifestyle</a>
-                                    <i class="fa-regular fa-comments ms-3 me-2"></i>
-                                    <a href="#" class="text-decoration-none">12 comments</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    -->
-
                     <div v-for="(article, i) in state.articles" class="main-article">
                         <img class="main-article-img" :src="state.path+article.img" :alt="article.title">
                         <div class="main-article-body d-flex my-4">
@@ -64,7 +31,7 @@ import { state } from '../state';
                             </div>
                             <div class="main-article-info">
                                 <h3>{{article.title}}</h3>
-                                <p class="text-muted w-75">
+                                <p class="text-gray w-75">
                                     {{article.content}}
                                 </p>
                                 <div class="main-article-interactions">

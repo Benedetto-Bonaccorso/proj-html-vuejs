@@ -190,3 +190,9 @@ img{
 .bottom-logo{
     height: 2rem;
 }
+
+#fullWidthButtons{
+    a:hover{
+        border: 5px solid var(--border-dark-blue);
+    }
+}
